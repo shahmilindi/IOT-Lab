@@ -9,7 +9,10 @@ void setup()
 void loop()
 {
   digitalWrite(11, HIGH);
-  delay(5000);
+  delay(3000);
+  tone(8,440);
+  delay(2000);
+  noTone(8);
   digitalWrite(11,LOW);
   for (int i=0; i<5; i++){
     digitalWrite(10,HIGH);
